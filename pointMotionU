@@ -1415,6 +1415,26 @@ boundaryField
                 uniformValue    (7.37722222e-04 1.03703704e-05 0.00000000e+00);
             }
         
+  arcStart12
+  {
+      type            uniformFixedValue;
+      uniformValue    (0. 0. 0.)
+  }
+  arcStart34
+  {
+      type            uniformFixedValue;
+      uniformValue    (0. 0. 0.)
+  }
+  arcEnd12
+  {
+      type            uniformFixedValue;
+      uniformValue    (0.00073811 0.         0.        )
+  }
+  arcEnd34
+  {
+      type            uniformFixedValue;
+      uniformValue    (0.00073811 0.         0.        )
+  }
 
 }
 
