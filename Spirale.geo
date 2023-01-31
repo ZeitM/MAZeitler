@@ -826,7 +826,7 @@ Plane Surface(1) = {1};
 //+
 Plane Surface(2) = {2};
 //+
-Extrude {0, 0, 1.4} {
+Extrude {0, 0, 0.0014} {
   Surface{2}; Surface{1}; Layers {38}; Recombine;
 }
 //+
