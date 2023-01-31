@@ -1232,4 +1232,8 @@ Physical Surface("arcEnd12") = {157};
 //+
 Physical Surface("arcEnd34") = {54};
 //+
+Physical Surface("back") = {1,2};
+//+
+Physical Surface("front") = {105, 207};
+//+
 Physical Volume("fluid") = {1,2};
