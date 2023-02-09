@@ -1,0 +1,99 @@
+
+/*--------------------------------*- C++ -*----------------------------------*| =========                 |                                                 |
+| \      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \    /   O peration     | Version:  2112                                  |
+|   \  /    A nd           | Website:  www.openfoam.com                      |
+|    \/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       volScalarField;
+    location    "0";
+    object      alpha.water;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    "back|back_oversetMesh"
+    {
+        type            empty;
+    }
+    Surface
+    {
+        type            empty;
+    }
+    workpiece
+    {
+        type            zeroGradient;
+    }
+    tool
+    {
+        type            zeroGradient;
+    }
+    Surface_wall_left1
+    {
+        type            empty;
+    }
+    wall
+    {
+        type            zeroGradient;
+    }
+    inlet
+    {
+        type              groovyBC;
+        variables         "r=1.25/2;x1=(-0.65+r);x2=(-0.65-r);z=(0);y=(2.52531);pOne=1.e-3*vector(x1,y,z);pTwo=1.e-3*vector(x2,y,z);pMid=0.5*(pOne+pTwo);ww=1.0-mag(pos()-pMid)/mag(pOne-pTwo)/0.5;";
+        valueExpression   "ww > 0.0 ? 1.0 : 0.0";
+        value             uniform 1;
+    }
+    outlet
+    {
+        type            zeroGradient;
+    }
+    "front|front_oversetMesh"
+    {
+        type            zeroGradient;
+    }
+    "outlet_ext*"
+    {
+        type            zeroGradient;
+        inletValue      uniform 0;
+        value           uniform 0;
+    }
+    "outlet_wall*|outlet_empty*"
+    {
+        type            slip;
+    }    
+
+  "arc1_1|arc1_2|arc1_3|arc1_4|arc1_5|arc1_6|arc1_7|arc1_8|arc1_9|arc1_10|arc1_11|arc1_12|arc1_13|arc1_14|arc1_15|arc1_16|arc1_17|arc1_18|arc1_19|arc1_20|arc1_21|arc1_22|arc1_23|arc1_24|arc1_25|arc1_26|arc1_27|arc1_28|arc1_29|arc1_30|arc1_31|arc1_32|arc1_33|arc1_34|arc1_35|arc1_36|arc1_37|arc1_38|arc1_39|arc1_40|arc1_41|arc1_42|arc1_43|arc1_44|arc1_45|arc1_46|arc1_47|arc1_48|arc1_49"
+  {
+      type          overset;
+  }
+  "arc4_1|arc4_2|arc4_3|arc4_4|arc4_5|arc4_6|arc4_7|arc4_8|arc4_9|arc4_10|arc4_11|arc4_12|arc4_13|arc4_14|arc4_15|arc4_16|arc4_17|arc4_18|arc4_19|arc4_20|arc4_21|arc4_22|arc4_23|arc4_24|arc4_25|arc4_26|arc4_27|arc4_28|arc4_29|arc4_30|arc4_31|arc4_32|arc4_33|arc4_34|arc4_35|arc4_36|arc4_37|arc4_38|arc4_39|arc4_40|arc4_41|arc4_42|arc4_43|arc4_44|arc4_45|arc4_46|arc4_47|arc4_48|arc4_49|arc4_50"
+  {
+      type          overset;
+  }
+  "arc2_1|arc2_2|arc2_3|arc2_4|arc2_5|arc2_6|arc2_7|arc2_8|arc2_9|arc2_10|arc2_11|arc2_12|arc2_13|arc2_14|arc2_15|arc2_16|arc2_17|arc2_18|arc2_19|arc2_20|arc2_21|arc2_22|arc2_23|arc2_24|arc2_25|arc2_26|arc2_27|arc2_28|arc2_29|arc2_30|arc2_31|arc2_32|arc2_33|arc2_34|arc2_35|arc2_36|arc2_37|arc2_38|arc2_39|arc2_40|arc2_41|arc2_42|arc2_43|arc2_44|arc2_45|arc2_46|arc2_47|arc2_48|arc2_49|arc2_50"
+  {
+       type            zeroGradient;
+  }
+  "arc3_1|arc3_2|arc3_3|arc3_4|arc3_5|arc3_6|arc3_7|arc3_8|arc3_9|arc3_10|arc3_11|arc3_12|arc3_13|arc3_14|arc3_15|arc3_16|arc3_17|arc3_18|arc3_19|arc3_20|arc3_21|arc3_22|arc3_23|arc3_24|arc3_25|arc3_26|arc3_27|arc3_28|arc3_29|arc3_30|arc3_31|arc3_32|arc3_33|arc3_34|arc3_35|arc3_36|arc3_37|arc3_38|arc3_39|arc3_40|arc3_41|arc3_42|arc3_43|arc3_44|arc3_45|arc3_46|arc3_47|arc3_48|arc3_49|arc3_50"
+  {
+       type            zeroGradient;
+  }
+  "arcStart12|arcStart34|arcEnd12|arcEnd34"
+  {
+       type            zeroGradient;
+  }
+
+}
+
+
+// ************************************************************************* //
