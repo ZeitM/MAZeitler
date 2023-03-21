@@ -1,0 +1,1447 @@
+
+    /*--------------------------------*- C++ -*----------------------------------*    | =========                 |                                                 |
+    | \      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+    |  \    /   O peration     | Version:  v2012                                 |
+    |   \  /    A nd           | Website:  www.openfoam.com                      |
+    |    \/     M anipulation  |                                                 |
+    \*---------------------------------------------------------------------------*/
+    FoamFile
+    {
+        version     2.0;
+        format      ascii;
+        class       pointVectorField;
+        object      pointMotionU;
+    }
+    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+    dimensions      [0 1 -1 0 0 0 0];
+
+    internalField   uniform (0 0 0);
+
+    boundaryField
+    {
+        ".*"
+        {
+            type            uniformFixedValue;
+            uniformValue    (0, 0, 0);
+        }
+    
+    
+
+                arc1_1
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (9.33333333e-06 1.86666667e-05 0.00000000e+00);
+                }
+            
+
+                arc1_2
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (2.80000000e-05 4.66666667e-05 0.00000000e+00);
+                }
+            
+
+                arc1_3
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (3.73333333e-05 7.46666667e-05 0.00000000e+00);
+                }
+            
+
+                arc1_4
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (5.60000000e-05 1.02666667e-04 0.00000000e+00);
+                }
+            
+
+                arc1_5
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (7.46666667e-05 1.12000000e-04 0.00000000e+00);
+                }
+            
+
+                arc1_6
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (8.40000000e-05 1.30666667e-04 0.00000000e+00);
+                }
+            
+
+                arc1_7
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00010267 0.00015867 0.        );
+                }
+            
+
+                arc1_8
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00012133 0.00018667 0.        );
+                }
+            
+
+                arc1_9
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00014    0.00021467 0.        );
+                }
+            
+
+                arc1_10
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00015867 0.00023333 0.        );
+                }
+            
+
+                arc1_11
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00018667 0.000252   0.        );
+                }
+            
+
+                arc1_12
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00021467 0.00027067 0.        );
+                }
+            
+
+                arc1_13
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00023333 0.00028933 0.        );
+                }
+            
+
+                arc1_14
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000252 0.000308 0.      );
+                }
+            
+
+                arc1_15
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00027067 0.00032667 0.        );
+                }
+            
+
+                arc1_16
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00029867 0.00034533 0.        );
+                }
+            
+
+                arc1_17
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00032667 0.00035467 0.        );
+                }
+            
+
+                arc1_18
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00035467 0.000364   0.        );
+                }
+            
+
+                arc1_19
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000392   0.00038267 0.        );
+                }
+            
+
+                arc1_20
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00042    0.00040133 0.        );
+                }
+            
+
+                arc1_21
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00043867 0.00040133 0.        );
+                }
+            
+
+                arc1_22
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000476   0.00040133 0.        );
+                }
+            
+
+                arc1_23
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000504 0.00042  0.      );
+                }
+            
+
+                arc1_24
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00052267 0.00042    0.        );
+                }
+            
+
+                arc1_25
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00056 0.00042 0.     );
+                }
+            
+
+                arc1_26
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000588 0.00042  0.      );
+                }
+            
+
+                arc1_27
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000616   0.00041067 0.        );
+                }
+            
+
+                arc1_28
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00065333 0.00041067 0.        );
+                }
+            
+
+                arc1_29
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00068133 0.00041067 0.        );
+                }
+            
+
+                arc1_30
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.0007     0.00041067 0.        );
+                }
+            
+
+                arc1_31
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000728   0.00041067 0.        );
+                }
+            
+
+                arc1_32
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00076533 0.00040133 0.        );
+                }
+            
+
+                arc1_33
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00079333 0.00038267 0.        );
+                }
+            
+
+                arc1_34
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00082133 0.00037333 0.        );
+                }
+            
+
+                arc1_35
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00084933 0.000364   0.        );
+                }
+            
+
+                arc1_36
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00087733 0.00034533 0.        );
+                }
+            
+
+                arc1_37
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00090533 0.00032667 0.        );
+                }
+            
+
+                arc1_38
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000924 0.000308 0.      );
+                }
+            
+
+                arc1_39
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00094267 0.00028    0.        );
+                }
+            
+
+                arc1_40
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00096133 0.00026133 0.        );
+                }
+            
+
+                arc1_41
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00098    0.00024267 0.        );
+                }
+            
+
+                arc1_42
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00099867 0.00021467 0.        );
+                }
+            
+
+                arc1_43
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00101733 0.000196   0.        );
+                }
+            
+
+                arc1_44
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.001036 0.000168 0.      );
+                }
+            
+
+                arc1_45
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00104533 0.00013067 0.        );
+                }
+            
+
+                arc1_46
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00104533 0.00010267 0.        );
+                }
+            
+
+                arc1_47
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (1.04533333e-03 7.46666667e-05 0.00000000e+00);
+                }
+            
+
+                arc1_48
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (1.05466667e-03 4.66666667e-05 0.00000000e+00);
+                }
+            
+
+                arc1_49
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (1.06400000e-03 1.86666667e-05 0.00000000e+00);
+                }
+            
+
+                arc2_1
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0. 0. 0.);
+                }
+            
+
+                arc2_2
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (9.33333333e-06 9.33333333e-06 0.00000000e+00);
+                }
+            
+
+                arc2_3
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (2.80000000e-05 3.73333333e-05 0.00000000e+00);
+                }
+            
+
+                arc2_4
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (3.73333333e-05 7.46666667e-05 0.00000000e+00);
+                }
+            
+
+                arc2_5
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (4.66666667e-05 1.02666667e-04 0.00000000e+00);
+                }
+            
+
+                arc2_6
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (6.53333333e-05 1.21333333e-04 0.00000000e+00);
+                }
+            
+
+                arc2_7
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (8.4e-05 1.4e-04 0.0e+00);
+                }
+            
+
+                arc2_8
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00010267 0.000168   0.        );
+                }
+            
+
+                arc2_9
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00012133 0.000196   0.        );
+                }
+            
+
+                arc2_10
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00014933 0.00021467 0.        );
+                }
+            
+
+                arc2_11
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00017733 0.00023333 0.        );
+                }
+            
+
+                arc2_12
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000196 0.000252 0.      );
+                }
+            
+
+                arc2_13
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00021467 0.00027067 0.        );
+                }
+            
+
+                arc2_14
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00023333 0.00028933 0.        );
+                }
+            
+
+                arc2_15
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000252 0.000308 0.      );
+                }
+            
+
+                arc2_16
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00027067 0.00032667 0.        );
+                }
+            
+
+                arc2_17
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00029867 0.00034533 0.        );
+                }
+            
+
+                arc2_18
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00032667 0.000364   0.        );
+                }
+            
+
+                arc2_19
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00035467 0.00037333 0.        );
+                }
+            
+
+                arc2_20
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00038267 0.00037333 0.        );
+                }
+            
+
+                arc2_21
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00041067 0.000392   0.        );
+                }
+            
+
+                arc2_22
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00043867 0.00041067 0.        );
+                }
+            
+
+                arc2_23
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00046667 0.00041067 0.        );
+                }
+            
+
+                arc2_24
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000504   0.00041067 0.        );
+                }
+            
+
+                arc2_25
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000532   0.00041067 0.        );
+                }
+            
+
+                arc2_26
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00056 0.00042 0.     );
+                }
+            
+
+                arc2_27
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000588 0.00042  0.      );
+                }
+            
+
+                arc2_28
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00062533 0.00042    0.        );
+                }
+            
+
+                arc2_29
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00066267 0.00042933 0.        );
+                }
+            
+
+                arc2_30
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00068133 0.00042    0.        );
+                }
+            
+
+                arc2_31
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00070933 0.00040133 0.        );
+                }
+            
+
+                arc2_32
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00073733 0.000392   0.        );
+                }
+            
+
+                arc2_33
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00076533 0.000392   0.        );
+                }
+            
+
+                arc2_34
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00080267 0.000392   0.        );
+                }
+            
+
+                arc2_35
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00083067 0.00037333 0.        );
+                }
+            
+
+                arc2_36
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00084933 0.00035467 0.        );
+                }
+            
+
+                arc2_37
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00087733 0.00034533 0.        );
+                }
+            
+
+                arc2_38
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00090533 0.00032667 0.        );
+                }
+            
+
+                arc2_39
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000924 0.000308 0.      );
+                }
+            
+
+                arc2_40
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000952 0.00028  0.      );
+                }
+            
+
+                arc2_41
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00098  0.000252 0.      );
+                }
+            
+
+                arc2_42
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00098933 0.00023333 0.        );
+                }
+            
+
+                arc2_43
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00099867 0.00021467 0.        );
+                }
+            
+
+                arc2_44
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00101733 0.00018667 0.        );
+                }
+            
+
+                arc2_45
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.001036   0.00015867 0.        );
+                }
+            
+
+                arc2_46
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00104533 0.00013067 0.        );
+                }
+            
+
+                arc2_47
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00105467 0.00010267 0.        );
+                }
+            
+
+                arc2_48
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (1.064e-03 8.400e-05 0.000e+00);
+                }
+            
+
+                arc2_49
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (1.064e-03 5.600e-05 0.000e+00);
+                }
+            
+
+                arc2_50
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (1.06400000e-03 1.86666667e-05 0.00000000e+00);
+                }
+            
+
+                arc3_1
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0. 0. 0.);
+                }
+            
+
+                arc3_2
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (9.33333333e-06 1.86666667e-05 0.00000000e+00);
+                }
+            
+
+                arc3_3
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (2.80000000e-05 4.66666667e-05 0.00000000e+00);
+                }
+            
+
+                arc3_4
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (4.66666667e-05 7.46666667e-05 0.00000000e+00);
+                }
+            
+
+                arc3_5
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (5.60000000e-05 1.02666667e-04 0.00000000e+00);
+                }
+            
+
+                arc3_6
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (6.53333333e-05 1.21333333e-04 0.00000000e+00);
+                }
+            
+
+                arc3_7
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (8.4e-05 1.4e-04 0.0e+00);
+                }
+            
+
+                arc3_8
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00010267 0.00015867 0.        );
+                }
+            
+
+                arc3_9
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00012133 0.00017733 0.        );
+                }
+            
+
+                arc3_10
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00014    0.00020533 0.        );
+                }
+            
+
+                arc3_11
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00015867 0.00023333 0.        );
+                }
+            
+
+                arc3_12
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00017733 0.000252   0.        );
+                }
+            
+
+                arc3_13
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00020533 0.00027067 0.        );
+                }
+            
+
+                arc3_14
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00023333 0.00028933 0.        );
+                }
+            
+
+                arc3_15
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000252 0.000308 0.      );
+                }
+            
+
+                arc3_16
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00027067 0.00031733 0.        );
+                }
+            
+
+                arc3_17
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00029867 0.000336   0.        );
+                }
+            
+
+                arc3_18
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000336 0.000364 0.      );
+                }
+            
+
+                arc3_19
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000364   0.00037333 0.        );
+                }
+            
+
+                arc3_20
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00038267 0.00038267 0.        );
+                }
+            
+
+                arc3_21
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00041067 0.000392   0.        );
+                }
+            
+
+                arc3_22
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000448   0.00040133 0.        );
+                }
+            
+
+                arc3_23
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000476   0.00041067 0.        );
+                }
+            
+
+                arc3_24
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00049467 0.00041067 0.        );
+                }
+            
+
+                arc3_25
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00052267 0.00042    0.        );
+                }
+            
+
+                arc3_26
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00056    0.00042933 0.        );
+                }
+            
+
+                arc3_27
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000588 0.00042  0.      );
+                }
+            
+
+                arc3_28
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000616   0.00041067 0.        );
+                }
+            
+
+                arc3_29
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00065333 0.00042    0.        );
+                }
+            
+
+                arc3_30
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00069067 0.00042    0.        );
+                }
+            
+
+                arc3_31
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00071867 0.00041067 0.        );
+                }
+            
+
+                arc3_32
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00073733 0.00041067 0.        );
+                }
+            
+
+                arc3_33
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00076533 0.00040133 0.        );
+                }
+            
+
+                arc3_34
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00079333 0.00038267 0.        );
+                }
+            
+
+                arc3_35
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00082133 0.00037333 0.        );
+                }
+            
+
+                arc3_36
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00085867 0.000364   0.        );
+                }
+            
+
+                arc3_37
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00087733 0.00034533 0.        );
+                }
+            
+
+                arc3_38
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00088667 0.00031733 0.        );
+                }
+            
+
+                arc3_39
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00091467 0.00029867 0.        );
+                }
+            
+
+                arc3_40
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000952 0.00028  0.      );
+                }
+            
+
+                arc3_41
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00097067 0.00026133 0.        );
+                }
+            
+
+                arc3_42
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00098    0.00024267 0.        );
+                }
+            
+
+                arc3_43
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00099867 0.00020533 0.        );
+                }
+            
+
+                arc3_44
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00101733 0.00017733 0.        );
+                }
+            
+
+                arc3_45
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00102667 0.00015867 0.        );
+                }
+            
+
+                arc3_46
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.001036   0.00013067 0.        );
+                }
+            
+
+                arc3_47
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (1.05466667e-03 9.33333333e-05 0.00000000e+00);
+                }
+            
+
+                arc3_48
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (1.06400000e-03 6.53333333e-05 0.00000000e+00);
+                }
+            
+
+                arc3_49
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (1.05466667e-03 4.66666667e-05 0.00000000e+00);
+                }
+            
+
+                arc3_50
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (1.05466667e-03 1.86666667e-05 0.00000000e+00);
+                }
+            
+
+                arc4_1
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0. 0. 0.);
+                }
+            
+
+                arc4_2
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (9.33333333e-06 1.86666667e-05 0.00000000e+00);
+                }
+            
+
+                arc4_3
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (2.80000000e-05 4.66666667e-05 0.00000000e+00);
+                }
+            
+
+                arc4_4
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (4.66666667e-05 7.46666667e-05 0.00000000e+00);
+                }
+            
+
+                arc4_5
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (5.60000000e-05 1.02666667e-04 0.00000000e+00);
+                }
+            
+
+                arc4_6
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (6.53333333e-05 1.21333333e-04 0.00000000e+00);
+                }
+            
+
+                arc4_7
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (8.40000000e-05 1.49333333e-04 0.00000000e+00);
+                }
+            
+
+                arc4_8
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00010267 0.00017733 0.        );
+                }
+            
+
+                arc4_9
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00012133 0.000196   0.        );
+                }
+            
+
+                arc4_10
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00014    0.00021467 0.        );
+                }
+            
+
+                arc4_11
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00015867 0.00023333 0.        );
+                }
+            
+
+                arc4_12
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00018667 0.000252   0.        );
+                }
+            
+
+                arc4_13
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00021467 0.00027067 0.        );
+                }
+            
+
+                arc4_14
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00023333 0.00028933 0.        );
+                }
+            
+
+                arc4_15
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000252 0.000308 0.      );
+                }
+            
+
+                arc4_16
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00027067 0.00032667 0.        );
+                }
+            
+
+                arc4_17
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00029867 0.000336   0.        );
+                }
+            
+
+                arc4_18
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00032667 0.00035467 0.        );
+                }
+            
+
+                arc4_19
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00035467 0.00037333 0.        );
+                }
+            
+
+                arc4_20
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000392   0.00037333 0.        );
+                }
+            
+
+                arc4_21
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00042    0.00038267 0.        );
+                }
+            
+
+                arc4_22
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000448 0.000392 0.      );
+                }
+            
+
+                arc4_23
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000476   0.00040133 0.        );
+                }
+            
+
+                arc4_24
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000504   0.00041067 0.        );
+                }
+            
+
+                arc4_25
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000532 0.00042  0.      );
+                }
+            
+
+                arc4_26
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00056    0.00042933 0.        );
+                }
+            
+
+                arc4_27
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00059733 0.00042933 0.        );
+                }
+            
+
+                arc4_28
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00062533 0.00042933 0.        );
+                }
+            
+
+                arc4_29
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00065333 0.00042    0.        );
+                }
+            
+
+                arc4_30
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00068133 0.00041067 0.        );
+                }
+            
+
+                arc4_31
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00070933 0.00041067 0.        );
+                }
+            
+
+                arc4_32
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00073733 0.00040133 0.        );
+                }
+            
+
+                arc4_33
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00076533 0.000392   0.        );
+                }
+            
+
+                arc4_34
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00080267 0.000392   0.        );
+                }
+            
+
+                arc4_35
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00082133 0.00037333 0.        );
+                }
+            
+
+                arc4_36
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00084    0.00035467 0.        );
+                }
+            
+
+                arc4_37
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000868   0.00034533 0.        );
+                }
+            
+
+                arc4_38
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000896   0.00032667 0.        );
+                }
+            
+
+                arc4_39
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000924 0.000308 0.      );
+                }
+            
+
+                arc4_40
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.000952 0.00028  0.      );
+                }
+            
+
+                arc4_41
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00097067 0.000252   0.        );
+                }
+            
+
+                arc4_42
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00098    0.00023333 0.        );
+                }
+            
+
+                arc4_43
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00099867 0.00021467 0.        );
+                }
+            
+
+                arc4_44
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00101733 0.00018667 0.        );
+                }
+            
+
+                arc4_45
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00102667 0.00015867 0.        );
+                }
+            
+
+                arc4_46
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.001036 0.00014  0.      );
+                }
+            
+
+                arc4_47
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (0.00105467 0.000112   0.        );
+                }
+            
+
+                arc4_48
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (1.06400000e-03 7.46666667e-05 0.00000000e+00);
+                }
+            
+
+                arc4_49
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (1.06400000e-03 4.66666667e-05 0.00000000e+00);
+                }
+            
+
+                arc4_50
+                {
+                    type            uniformFixedValue;
+                    uniformValue    (1.06400000e-03 1.86666667e-05 0.00000000e+00);
+                }
+            
+  arcStart12
+  {
+      type            uniformFixedValue;
+      uniformValue    (0. 0. 0.);
+  }
+  arcStart34
+  {
+      type            uniformFixedValue;
+      uniformValue    (0. 0. 0.);
+  }
+  arcEnd12
+  {
+      type            uniformFixedValue;
+      uniformValue    (0.001064 0.       0.      );
+  }
+  arcEnd34
+  {
+      type            uniformFixedValue;
+      uniformValue    (0.001064 0.       0.      );
+  }
+
+    }
+
+    // ************************************************************************* //
+    
