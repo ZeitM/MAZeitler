@@ -23,7 +23,7 @@
         ".*"
         {
             type            uniformFixedValue;
-            uniformValue    (0, 0, 0);
+            uniformValue    (0 0 0);
         }
     
     
