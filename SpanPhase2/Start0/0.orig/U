@@ -94,6 +94,7 @@ boundaryField
        value           uniform (0 0 0);
   }
   "arcStart12|arcStart34|arcEnd12|arcEnd34"
+  {
        type            fixedValue;
        value           uniform (0 0 0);
   }

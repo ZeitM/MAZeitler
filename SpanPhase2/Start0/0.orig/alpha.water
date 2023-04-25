@@ -89,6 +89,7 @@ boundaryField
        type            zeroGradient;
   }
   "arcStart12|arcStart34|arcEnd12|arcEnd34"
+  {
        type            zeroGradient;
   }
 

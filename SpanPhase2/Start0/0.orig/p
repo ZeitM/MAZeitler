@@ -90,6 +90,7 @@ boundaryField
        value           uniform 0;
   }
   "arcStart12|arcStart34|arcEnd12|arcEnd34"
+  {
        type            zeroGradient;
        value           uniform 0;
   }
