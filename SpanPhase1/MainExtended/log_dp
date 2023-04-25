@@ -1,0 +1,216 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2206                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 76d719d1e6-20220624 OPENFOAM=2206 version=v2206
+Arch   : "LSB;label=32;scalar=64"
+Exec   : decomposePar
+Date   : Apr 07 2023
+Time   : 10:46:53
+Host   : kruemmer.ihs.uni-stuttgart.de
+PID    : 2347
+I/O    : uncollated
+Case   : /mnt/scratch/mzeitler/MasterArbeit/SpanPhase1/rotationTest
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Overriding DebugSwitches according to controlDict
+    overset         0;
+
+    dynamicOversetFvMesh 0;
+
+    cellVolumeWeight 0;
+
+
+
+Decomposing mesh
+
+Create mesh
+
+Calculating distribution of cells
+Decomposition method metis [6] (region region0)
+
+Finished decomposition in 0.93 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+Overriding DebugSwitches according to controlDict
+    overset         0;
+
+    dynamicOversetFvMesh 0;
+
+    cellVolumeWeight 0;
+
+
+Processor 0
+    Number of cells = 120683
+    Number of points = 136611
+    Number of faces shared with processor 1 = 1458
+    Number of faces shared with processor 2 = 1408
+    Number of faces shared with processor 5 = 2358
+    Number of processor patches = 3
+    Number of processor faces = 5224
+    Number of boundary faces = 25816
+Overriding DebugSwitches according to controlDict
+    overset         0;
+
+    dynamicOversetFvMesh 0;
+
+    cellVolumeWeight 0;
+
+
+Processor 1
+    Number of cells = 120683
+    Number of points = 129548
+    Number of faces shared with processor 0 = 1458
+    Number of faces shared with processor 2 = 2291
+    Number of processor patches = 2
+    Number of processor faces = 3749
+    Number of boundary faces = 13647
+Overriding DebugSwitches according to controlDict
+    overset         0;
+
+    dynamicOversetFvMesh 0;
+
+    cellVolumeWeight 0;
+
+
+Processor 2
+    Number of cells = 120684
+    Number of points = 130428
+    Number of faces shared with processor 0 = 1408
+    Number of faces shared with processor 1 = 2291
+    Number of faces shared with processor 3 = 1659
+    Number of faces shared with processor 5 = 588
+    Number of processor patches = 4
+    Number of processor faces = 5946
+    Number of boundary faces = 13132
+Overriding DebugSwitches according to controlDict
+    overset         0;
+
+    dynamicOversetFvMesh 0;
+
+    cellVolumeWeight 0;
+
+
+Processor 3
+    Number of cells = 120683
+    Number of points = 130082
+    Number of faces shared with processor 2 = 1659
+    Number of faces shared with processor 4 = 1219
+    Number of faces shared with processor 5 = 924
+    Number of processor patches = 3
+    Number of processor faces = 3802
+    Number of boundary faces = 14622
+Overriding DebugSwitches according to controlDict
+    overset         0;
+
+    dynamicOversetFvMesh 0;
+
+    cellVolumeWeight 0;
+
+
+Processor 4
+    Number of cells = 120684
+    Number of points = 130326
+    Number of faces shared with processor 3 = 1219
+    Number of faces shared with processor 5 = 2668
+    Number of processor patches = 2
+    Number of processor faces = 3887
+    Number of boundary faces = 15001
+Overriding DebugSwitches according to controlDict
+    overset         0;
+
+    dynamicOversetFvMesh 0;
+
+    cellVolumeWeight 0;
+
+
+Processor 5
+    Number of cells = 120684
+    Number of points = 130508
+    Number of faces shared with processor 0 = 2358
+    Number of faces shared with processor 2 = 588
+    Number of faces shared with processor 3 = 924
+    Number of faces shared with processor 4 = 2668
+    Number of processor patches = 4
+    Number of processor faces = 6538
+    Number of boundary faces = 12698
+
+Number of processor faces = 14573
+Max number of cells = 120684 (0.000414307% above average 120684)
+Max number of processor patches = 4 (33.3333% above average 3)
+Max number of faces between processors = 6538 (34.5914% above average 4857.67)
+
+Time = 0
+--> FOAM Warning : 
+    From void Foam::polyBoundaryMesh::calcGroupIDs() const
+    in file meshes/polyMesh/polyBoundaryMesh/polyBoundaryMesh.C at line 100
+    Removed group 'wall' which clashes with patch 3 of the same name.
+
+Processor 0: field transfer
+Overriding DebugSwitches according to controlDict
+    overset         0;
+
+    dynamicOversetFvMesh 0;
+
+    cellVolumeWeight 0;
+
+Processor 1: field transfer
+Overriding DebugSwitches according to controlDict
+    overset         0;
+
+    dynamicOversetFvMesh 0;
+
+    cellVolumeWeight 0;
+
+Processor 2: field transfer
+Overriding DebugSwitches according to controlDict
+    overset         0;
+
+    dynamicOversetFvMesh 0;
+
+    cellVolumeWeight 0;
+
+Processor 3: field transfer
+Overriding DebugSwitches according to controlDict
+    overset         0;
+
+    dynamicOversetFvMesh 0;
+
+    cellVolumeWeight 0;
+
+Processor 4: field transfer
+Overriding DebugSwitches according to controlDict
+    overset         0;
+
+    dynamicOversetFvMesh 0;
+
+    cellVolumeWeight 0;
+
+Processor 5: field transfer
+Overriding DebugSwitches according to controlDict
+    overset         0;
+
+    dynamicOversetFvMesh 0;
+
+    cellVolumeWeight 0;
+
+
+End
+
