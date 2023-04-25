@@ -1,0 +1,218 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2206                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+28
+(
+    arcTop6
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       18;
+    }
+    arcEndTop
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       19;
+    }
+    overTop6
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       20;
+    }
+    overTop5
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       21;
+    }
+    arcTop5
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       22;
+    }
+    overTop4
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       23;
+    }
+    arcTop4
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       24;
+    }
+    overTop3
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       25;
+    }
+    arcTop3
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       26;
+    }
+    overTop2
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       27;
+    }
+    arcTop2
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       28;
+    }
+    overTop1
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       29;
+    }
+    arcTop1
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       30;
+    }
+    arcStart
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       31;
+    }
+    arcBot1
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       33;
+    }
+    overBot1
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       34;
+    }
+    arcBot2
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       35;
+    }
+    overBot2
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       36;
+    }
+    arcBot3
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       37;
+    }
+    overBot3
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       38;
+    }
+    arcBot4
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       39;
+    }
+    overBot4
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       40;
+    }
+    overBot5
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       41;
+    }
+    arcBot5
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       42;
+    }
+    arcEndBot
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       43;
+    }
+    overBot6
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       44;
+    }
+    arcBot6
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       45;
+    }
+    defaultFaces
+    {
+        type            patch;
+        nFaces          36;
+        startFace       46;
+    }
+)
+
+// ************************************************************************* //

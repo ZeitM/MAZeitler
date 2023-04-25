@@ -1,0 +1,80 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2206                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       pointVectorField;
+    object      pointMotionUx;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform (0 0 0);
+
+boundaryField
+{
+    "arcTop1|overTop1|arcBot1|overBot1"
+    {
+        type            slip;
+    }
+    
+    "arcTop2|overTop2|arcBot2|overBot2"
+    {
+        type            slip;
+    }
+    
+
+    "arcTop3|arcBot3|overTop3|overBot3"
+    {
+        type            slip;
+    }     
+
+    "arcTop4|arcBot4|overTop4|overBot4"
+    {
+        type            slip;
+    }
+    "arcTop5|arcBot5|overTop5|overBot5"
+    {
+        type            angularOscillatingVelocity;
+        value           uniform (0 0 0);
+        axis            (0 0 -1);
+        origin          (0.5 0 0);
+        angle0          0;
+        amplitude       0.1;
+        omega           1;
+    }
+    
+    
+    "arcEndTop|arcEndBot|arcTop6|arcBot6|overTop6|overBot6"
+    {
+        type            angularOscillatingVelocity;
+        value           uniform (0 0 0);
+        axis            (0 0 -1);
+        origin          (0.5 0 0);
+        angle0          0;
+        amplitude       0.1;
+        omega           1;
+    } 
+    
+    "inlet|outlet|wall|arcStart"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0 0 0);
+    }
+
+    defaultFaces
+    {
+        type            empty;
+    }
+
+}
+
+
+// ************************************************************************* //
