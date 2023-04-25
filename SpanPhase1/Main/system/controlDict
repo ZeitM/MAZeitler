@@ -1,0 +1,70 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2206                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+DebugSwitches
+{
+    overset                 0;
+    dynamicOversetFvMesh    0;
+    cellVolumeWeight        0;
+}
+
+application     overInterDyMFoam;
+
+startFrom       startTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         0.01;
+
+deltaT          5E-05;
+
+writeControl    adjustableRunTime;
+
+writeInterval   0.001;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable true;
+
+adjustTimeStep off;
+
+maxCo	            5;
+maxAlphaCo	    5;
+maxDeltaT	    0.1;
+
+// ************************************************************************* //
+
+libs (
+      "libOpenFOAM.so"
+      "libsimpleSwakFunctionObjects.so"
+      "libswakFunctionObjects.so"
+      "libgroovyBC.so"
+      "libforces.so"
+      "liboverset.so"
+      "libfvMotionSolvers.so"
+     );

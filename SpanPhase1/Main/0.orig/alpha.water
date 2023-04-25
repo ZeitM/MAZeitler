@@ -1,0 +1,118 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2206                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       volScalarField;
+    location    "0";
+    object      alpha.water;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    back
+    {
+        type            empty;
+    }
+    Surface
+    {
+        type            empty;
+    }
+    tool
+    {
+        type            zeroGradient;
+    }
+    wall
+    {
+        type            zeroGradient;
+    }
+    inlet
+    {
+        type            groovyBC;
+        variables       "r=1.25/2;x1=(-0.65+r);x2=(-0.65-r);z=(0);y=(2.52531);pOne=1.e-3*vector(x1,y,z);pTwo=1.e-3*vector(x2,y,z);pMid=0.5*(pOne+pTwo);ww=1.0-mag(pos()-pMid)/mag(pOne-pTwo)/0.5;";
+        valueExpression "ww > 0.0 ? 1.0 : 0.0";
+        value           uniform 0;
+    }
+    outlet
+    {
+        type            zeroGradient;
+    }
+    front
+    {
+        type            zeroGradient;
+    }
+    outlet_side_1
+    {
+        type            empty;
+    }
+    outlet_side_2
+    {
+        type            empty;
+    }
+    outlet_side_3
+    {
+        type            empty;
+    }
+    outlet_side_4
+    {
+        type            empty;
+    }
+    outlet_side_5
+    {
+        type            empty;
+    }
+    outlet_side_6
+    {
+        type            empty;
+    }
+    outlet_side_7
+    {
+        type            empty;
+    }
+    outlet_side_8
+    {
+        type            empty;
+    }
+    "outlet_empty*"
+    {
+        type            slip;
+    }
+    "outlet_wall*"
+    {
+        type            slip;
+    }
+    "outlet_ext*"
+    {
+        type            zeroGradient;
+        inletValue      uniform 0;
+        value           uniform 0;
+    }
+    chipWall
+    {
+        type            zeroGradient;
+    }
+    "chipOverset|overset2"
+    {
+        type            overset;
+        value           uniform 0;
+    }
+    oversetWall
+    {
+        type            zeroGradient;
+    }
+}
+
+
+// ************************************************************************* //
