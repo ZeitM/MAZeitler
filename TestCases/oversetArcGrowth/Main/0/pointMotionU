@@ -1,0 +1,133 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2206                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       pointVectorField;
+    object      pointMotionUx;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform (0 0 0);
+
+boundaryField
+{
+    "arcIn1|arcOut1|overIn1|overOut1"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.002731549908274289 0.025988961352219918 0);
+    }
+    
+    "arcIn2|arcOut2|overIn2|overOut2"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.013538367702949139 0.07683104173669494 0);
+    }
+    
+    "arcIn3|arcOut3|overIn3|overOut3"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.03467969349780642 0.12431523692103413 0);
+    }
+    
+    "arcIn4|arcOut4|overIn4|overOut4"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.06523154990827429 0.16636625972123342 0);
+    }
+    
+    "arcIn5|arcOut5|overIn5|overOut5"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.10385867420514261 0.20114627865772905 0);
+    }
+    
+    "arcIn6|arcOut6|overIn6|overOut6"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.14887287570313146 0.2271352400099491 0);
+    }
+    
+    "arcIn7|arcOut7|overIn7|overOut7"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.19830681779467496 0.2431973014579284 0);
+    }
+    
+    "arcIn8|arcOut8|overIn8|overOut8"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.25 0.24863047384206827 0);
+    }
+    
+    "arcIn9|arcOut9|overIn9|overOut9"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.30169318220532515 0.24319730145792828 0);
+    }
+    
+    "arcIn10|arcOut10|overIn10|overOut10"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.3511271242968683 0.227135240009949 0);
+    }
+    
+    "arcIn11|arcOut11|overIn11|overOut11"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.3961413257948574 0.20114627865772916 0);
+    }
+    
+    "arcIn12|arcOut12|overIn12|overOut12"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.4347684500917255 0.16636625972123342 0);
+    }
+    
+    "arcIn13|arcOut13|overIn13|overOut13"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.46532030650219336 0.12431523692103413 0);
+    }
+    
+    "arcIn14|arcOut14|overIn14|overOut14"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.48646163229705075 0.07683104173669492 0);
+    }
+    
+    "arcIn15|arcOut15|overIn15|overOut15"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.4972684500917257 0.025988961352219918 0);
+    }
+    
+    arcEnd
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0.5 0 0);
+    }
+
+    "inlet|outlet|wall|arcStart"
+    {
+        type            uniformFixedValue;
+        uniformValue    constant (0 0 0);
+    }
+
+    defaultFaces
+    {
+        type            empty;
+    }
+
+}
+
+
+// ************************************************************************* //

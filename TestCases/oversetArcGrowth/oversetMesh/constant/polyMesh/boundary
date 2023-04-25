@@ -1,0 +1,463 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2206                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+63
+(
+    overOut5
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       227;
+    }
+    overOut6
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       229;
+    }
+    overOut7
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       231;
+    }
+    overOut8
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       233;
+    }
+    overOut9
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       235;
+    }
+    overOut10
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       237;
+    }
+    overOut11
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       239;
+    }
+    overOut12
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       241;
+    }
+    overOut13
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       243;
+    }
+    overOut14
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       245;
+    }
+    overOut15
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       247;
+    }
+    arcEnd
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          4;
+        startFace       249;
+    }
+    arcOut15
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       253;
+    }
+    arcOut14
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       255;
+    }
+    arcOut13
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       257;
+    }
+    arcOut12
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       259;
+    }
+    arcOut11
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       261;
+    }
+    arcOut10
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       263;
+    }
+    arcOut9
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       265;
+    }
+    arcOut8
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       267;
+    }
+    arcOut7
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       269;
+    }
+    arcOut6
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       271;
+    }
+    arcOut5
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       273;
+    }
+    arcOut4
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       275;
+    }
+    arcOut3
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       277;
+    }
+    arcOut2
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       279;
+    }
+    arcOut1
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       281;
+    }
+    arcStart
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          4;
+        startFace       283;
+    }
+    overOut1
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       287;
+    }
+    overOut2
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       289;
+    }
+    overOut3
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       291;
+    }
+    overOut4
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          2;
+        startFace       293;
+    }
+    arcIn3
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       295;
+    }
+    arcIn4
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       296;
+    }
+    arcIn5
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       297;
+    }
+    arcIn6
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       298;
+    }
+    arcIn7
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       299;
+    }
+    arcIn8
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       300;
+    }
+    arcIn9
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       301;
+    }
+    arcIn10
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       302;
+    }
+    arcIn11
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       303;
+    }
+    arcIn12
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       304;
+    }
+    arcIn13
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       305;
+    }
+    arcIn14
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       306;
+    }
+    arcIn15
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       307;
+    }
+    overIn15
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       308;
+    }
+    overIn14
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       309;
+    }
+    overIn13
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       310;
+    }
+    overIn12
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       311;
+    }
+    overIn11
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       312;
+    }
+    overIn10
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       313;
+    }
+    overIn9
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       314;
+    }
+    overIn8
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       315;
+    }
+    overIn7
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       316;
+    }
+    overIn6
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       317;
+    }
+    overIn5
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       318;
+    }
+    overIn4
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       319;
+    }
+    overIn3
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       320;
+    }
+    overIn2
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       321;
+    }
+    overIn1
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       322;
+    }
+    arcIn1
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       323;
+    }
+    arcIn2
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          1;
+        startFace       324;
+    }
+    defaultFaces
+    {
+        type            patch;
+        nFaces          368;
+        startFace       325;
+    }
+)
+
+// ************************************************************************* //
