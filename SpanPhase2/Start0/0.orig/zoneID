@@ -1,0 +1,38 @@
+
+/*--------------------------------*- C++ -*----------------------------------*  =========                 |
+  \      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \    /   O peration     | Website:  https://openfoam.org
+    \  /    A nd           | Version:  6
+     \/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      zoneID;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    ".*"
+    {
+        type            zeroGradient;
+    }
+
+  "arc1_1|arc1_2|arc1_3|arc1_4|arc1_5|arc1_6|arc1_7|arc1_8|arc1_9|arc1_10|arc1_11|arc1_12|arc1_13|arc1_14|arc1_15|arc1_16|arc1_17|arc1_18|arc1_19|arc1_20|arc1_21|arc1_22|arc1_23|arc1_24|arc1_25|arc1_26|arc1_27|arc1_28|arc1_29|arc1_30|arc1_31|arc1_32|arc1_33|arc1_34|arc1_35|arc1_36|arc1_37|arc1_38|arc1_39|arc1_40|arc1_41|arc1_42|arc1_43|arc1_44|arc1_45|arc1_46|arc1_47|arc1_48|arc1_49"
+  {
+      type            overset;
+  }
+  "arc4_1|arc4_2|arc4_3|arc4_4|arc4_5|arc4_6|arc4_7|arc4_8|arc4_9|arc4_10|arc4_11|arc4_12|arc4_13|arc4_14|arc4_15|arc4_16|arc4_17|arc4_18|arc4_19|arc4_20|arc4_21|arc4_22|arc4_23|arc4_24|arc4_25|arc4_26|arc4_27|arc4_28|arc4_29|arc4_30|arc4_31|arc4_32|arc4_33|arc4_34|arc4_35|arc4_36|arc4_37|arc4_38|arc4_39|arc4_40|arc4_41|arc4_42|arc4_43|arc4_44|arc4_45|arc4_46|arc4_47|arc4_48|arc4_49|arc4_50"
+  {
+      type            overset;
+  }
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
