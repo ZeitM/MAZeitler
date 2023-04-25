@@ -1,1 +1,2 @@
 
+qsub.Phase2AllSerial.sh can only be used after Main1 was already computed as the end results of this directory are needed
