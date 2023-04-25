@@ -1,0 +1,99 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      topoSetDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+actions
+(
+    {
+        name    c0;
+        type    cellSet;
+        action  new;
+        source  regionsToCell;
+        insidePoints ((2 0.5 0.0));
+    }
+
+    {
+        name    c1;
+        type    cellSet;
+        action  new;
+        source  cellToCell;
+        set     c0;
+    }
+
+    {
+        name    c1;
+        type    cellSet;
+        action  invert;
+    }
+
+    
+    
+    {
+        name    c2;
+        type    cellSet;
+        action  new;
+        source  regionsToCell;
+        insidePoints ((0.01 0.01 0));
+        set     c1;
+    }
+    {
+        name    c2_2;
+        type    cellSet;
+        action  new;
+        source  regionsToCell;
+        insidePoints ((0.01 -0.51 0));
+        set     c1;
+    }
+    {
+        name    c2;
+        type    cellSet;
+        action  add;
+        source  cellToCell;
+        set     c2_2;
+    }
+    
+
+    {
+        name    c1;
+        type    cellSet;
+        action  subtract;
+        source  cellToCell;
+        set     c2;
+    }
+    
+    
+	{
+        name    oversetZone;
+        type    cellZoneSet;
+        action  new;
+        source  setToCellZone;
+        sourceInfo
+        {
+            set c1;
+        }
+    }
+    {
+        name    oversetZone2;
+        type    cellZoneSet;
+        action  new;
+        source  setToCellZone;
+        sourceInfo
+        {
+            set c2;
+        }
+    }
+);
+
+// ************************************************************************* //
